@@ -19,7 +19,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - CSS
 - Javascript
 - Bootstrap
--Jquery
+- Jquery
 - Deploy realizado na Vercel
 
 ### Rodando localmente
