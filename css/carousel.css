@@ -1,0 +1,133 @@
+@import "geral.css";
+
+#mainSlider .carousel-inner, #mainSlider .carousel-item {
+    height: calc(100vh - 125px);
+}
+
+#mainSlider .carousel-caption {
+    top: 30%;
+    left: 20%;
+    text-align: left;
+}
+
+#mainSlider .carousel-caption h1 {
+    font-size: 8rem;
+}
+
+#mainSlider .carousel-caption h3 {
+    width: 45rem;
+    background-color: var(--green-100);
+    border-radius: 3px;
+}
+
+#mainSlider .carousel-caption button {
+    width: 20rem;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    color: var(--white);
+    background: transparent;
+    padding: 1.4rem;
+    margin-top: 7rem;
+    border: 2px solid var(--white);
+}
+#mainSlider .carousel-caption button:hover {
+    filter: brightness(0.8);
+}
+.carousel-control-prev,
+.carousel-control-next {
+    height: 10rem;
+    width: 10rem;
+    top: 40%;
+    background-color: var(--gray-900);
+}
+
+
+@media only screen and (max-width: 414px) {
+    #mainSlider .carousel-item,   #mainSlider .carousel-inner {
+        height: 45rem;
+    }
+
+    #mainSlider .carousel-item img{
+        height: 424px;
+        object-fit: cover;
+        object-position: left;
+    }  
+    .carousel-control-prev,
+    .carousel-control-next {
+        height: 5rem;
+        width: 5rem;
+        top: 70%;
+        background-color: var(--gray-900);
+    }  
+    .carousel-control-next {
+        left: 20%;
+    }
+    .carousel-control-prev {
+        left: 5%;
+    }
+    #mainSlider .carousel-caption {
+        top: 10%;
+        left: 5%;
+        text-align: left;
+    }
+    #mainSlider .carousel-caption span {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+    
+    #mainSlider .carousel-caption h1 {
+        font-size: 5rem;
+        line-height: 5.5rem;
+    }
+    
+    #mainSlider .carousel-caption h3 {
+        width: 30rem;
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+    }
+    
+    #mainSlider .carousel-caption button {
+        width: 20rem;
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+        color: var(--white);
+        background: transparent;
+        padding: 1.4rem;
+        margin-top: 7rem;
+        border: 2px solid var(--white);
+        border-radius: 4px; 
+    }
+        
+}
+
+@media only screen and (max-width: 375px) { 
+    .carousel-control-prev,
+    .carousel-control-next {
+        height: 5rem;
+        width: 5rem;
+        top: 65%;
+        background-color: var(--gray-900);
+    }  
+}
+
+@media only screen and (max-width: 320px) { 
+    .carousel-control-prev,
+    .carousel-control-next {
+        height: 5rem;
+        width: 5rem;
+        top: 75%;
+        background-color: var(--gray-900);
+    }  
+    .carousel-control-next {
+        left: 25%;
+    }
+    .carousel-control-prev {
+        left: 5%;
+    }
+}

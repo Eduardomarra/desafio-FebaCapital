@@ -1,0 +1,69 @@
+@import "geral.css";
+
+.navigation {
+    max-width: 110rem;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 790px) {
+    .mobile {
+        cursor: pointer;
+    }
+    .line {
+        display: block;
+    }
+    header .container {
+        padding: 2rem 0.5rem;
+    }
+
+    header .container .nav {
+        position: fixed;
+        top: 10rem;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        height: 100%;
+        z-index: 3;
+        transform: translateX(-800px);
+        opacity: 0;
+        transition: all .5s ease;
+        background: var(--white);
+    }
+    header .container .social {
+        position: fixed;
+        top: 400px;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        z-index: 3;
+        transform: translateX(-800px);
+        opacity: 0;
+        transition: all .5s ease;
+    }
+    header .container .nav li a {
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
+
+    header .container .social {
+        display: flex;
+        align-items: flex-start;
+        margin: 0 1.5rem;
+    }
+
+    header .container .social button {
+        margin: 10rem 0 0 0;
+        width: 90%;
+    }
+    header .container .nav.active,
+    header .container .social.active {
+        transition: all .5s ease;
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}

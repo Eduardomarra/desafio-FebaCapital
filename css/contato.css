@@ -1,0 +1,90 @@
+@import "geral.css";
+
+.contato {
+    background: var(--gray-900);
+}
+
+.contato .content-contato {
+    max-width: 110rem;
+    margin: 0 auto;
+}
+
+.contato .content-contato h2{
+    width: 30rem;
+    font-size: 3.6rem;
+    line-height: 3.8rem;
+}
+
+.contato .content-contato p{
+    width: 35rem;
+}
+
+.contato .content-contato .consultores div img:nth-child(2) {
+    position: absolute;
+    left: 4rem;
+}
+.contato .content-contato .consultores div img:nth-child(3) {
+    position: absolute;
+    left: 8.3rem;
+}
+
+.contato .image-contato .form-contato {
+    position: absolute;
+    top: 3%;
+    left: -15rem;
+    width: 50rem;
+    height: auto;
+    background: var(--white);
+    border-radius: 5px;
+}
+
+.contato .image-contato .form-contato .form-floating textarea {
+    height: 20rem;
+    resize: none;
+}
+
+@media screen and (max-width: 414px) {
+    .contato {
+        height: 100rem;
+    }
+    .img-contato {
+        display: none;
+    }
+    .contato .image-contato .form-contato {
+        position: absolute;
+        top: 25%;
+        left: -36rem;
+        width: 34rem;
+        height: auto;
+        background: var(--white);
+        border-radius: 5px;
+    }
+    .consultores {
+        margin-top: 70rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .contato {
+        height: 100rem;
+        padding: 0 1rem;
+    }
+    .contato .content-contato p{
+        width: 30rem;
+    }
+    .img-contato {
+        display: none;
+    }
+    .contato .image-contato .form-contato {
+        position: absolute;
+        top: 25%;
+        left: -30rem;
+        width: 30rem;
+        height: auto;
+        background: var(--white);
+        border-radius: 5px;
+    }
+    .consultores {
+        margin-top: 70rem;
+    }
+}
